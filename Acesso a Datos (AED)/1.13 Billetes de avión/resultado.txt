@@ -1,0 +1,6 @@
+---
+Flight: LPA to VLC
+Carrier: Iberia Airlines
+Duration: 253 minutes
+Total Cost: 451 euros
+---
