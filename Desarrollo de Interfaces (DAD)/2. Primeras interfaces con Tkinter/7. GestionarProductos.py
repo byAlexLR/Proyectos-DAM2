@@ -1,3 +1,5 @@
+# byAlexLR
+
 # 7. Crear un sistema para gestionar productos que incluya nombre, precio
 # y imagen. Mostrar los productos en una lista con sus imágenes.
 
