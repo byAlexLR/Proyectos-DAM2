@@ -1,3 +1,5 @@
+# byAlexLR
+
 # 6. Crear un visor de imágenes que permita navegar entre diferentes imágenes usando botones anterior/siguiente.
 
 # Importa el módulo os para operaciones del sistema de archivos
