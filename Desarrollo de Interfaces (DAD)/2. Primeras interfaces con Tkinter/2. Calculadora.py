@@ -1,3 +1,5 @@
+# byAlexLR
+
 # 2. Crear una calculadora simple que sume dos números ingresados en campos de texto.
 
 # Importa la biblioteca tkinter para la interfaz gráfica
