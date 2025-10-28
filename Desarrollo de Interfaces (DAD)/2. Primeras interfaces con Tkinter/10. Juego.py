@@ -1,3 +1,5 @@
+# byAlexLR
+
 # 10. Desarrollar una aplicación interactiva de juego de memoria que implemente el clásico "Memory" o "Concentración".
 
 # Importa el módulo os para operaciones del sistema de archivos
