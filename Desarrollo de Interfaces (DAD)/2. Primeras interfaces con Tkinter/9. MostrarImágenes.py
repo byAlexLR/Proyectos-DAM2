@@ -1,3 +1,5 @@
+# byAlexLR
+
 # 9. El programa deberá tener lo siguiente:
 # • Cargar 10 imágenes aleatorias de un directorio con imágenes proporcionadas en esta tarea.
 # • Mostrar una imagen con un cuadro de texto y un botón comprobar.
