@@ -1,0 +1,27 @@
+<hibernate-configuration>
+    <session-factory>
+        <!--  Configuración de conexión a la base de datos  -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/biblioteca_hibernate</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">root</property>
+    
+        <!--  Dialecto de MySQL  -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    
+        <!--  Mostrar SQL en consola  -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+    
+        <!--  Gestión automática del esquema  -->
+        <property name="hibernate.hbm2ddl.auto">validate</property>
+    
+        <!--  Pool de conexiones  -->
+        <property name="hibernate.pool_size">10</property>
+    
+        <!--  Mapeo de entidades  -->
+        <mapping class="com.dam.modelo.Autor"/>
+        <mapping class="com.dam.modelo.Libro"/>
+        <mapping class="com.dam.modelo.Ejemplar"/>
+    </session-factory>
+</hibernate-configuration>
