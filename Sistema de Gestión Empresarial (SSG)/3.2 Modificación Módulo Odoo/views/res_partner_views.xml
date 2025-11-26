@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- byAlexLR -->
+<odoo>
+    <record id="view_partner_form_inherit_ejercicios" model="ir.ui.view">
+        <field name="name">res.partner.form.ejercicios</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//field[@name='category_id']" position="after">
+                <field name="customer_level" widget="radio" options="{'horizontal': true}"/>
+            </xpath>
+
+            <xpath expr="//page[@name='internal_notes']" position="before">
+                <page string="Datos Personales (Ejercicio 3)">
+                    <group>
+                        <group>
+                            <field name="birth_date"/>
+                            <field name="age"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+
+        </field>
+    </record>
+
+    <record id="view_partner_tree_inherit_ejercicios" model="ir.ui.view">
+        <field name="name">res.partner.tree.ejercicios</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_tree"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//field[@name='email']" position="after">
+                <field name="customer_level" optional="show"/>
+            </xpath>
+
+            <xpath expr="//field[@name='customer_level']" position="after">
+                <field name="age" optional="show"/>
+            </xpath>
+
+        </field>
+    </record>
+
+    <record id="view_res_partner_filter_inherit_ejercicios" model="ir.ui.view">
+        <field name="name">res.partner.select.inherit.ejercicios</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_res_partner_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='type_company']" position="after">
+                <separator/>
+                <filter string="Clientes Oro" name="gold" domain="[('customer_level', '=', 'gold')]"/>
+                <filter string="Clientes Plata" name="silver" domain="[('customer_level', '=', 'silver')]"/>
+                <filter string="Clientes Bronce" name="bronze" domain="[('customer_level', '=', 'bronze')]"/>
+                <filter string="Agrupar por Nivel" name="group_by_level" context="{'group_by':'customer_level'}"/>
+                <separator/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
