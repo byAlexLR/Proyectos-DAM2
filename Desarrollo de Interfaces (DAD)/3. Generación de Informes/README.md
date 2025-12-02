@@ -1,5 +1,3 @@
-# byAlexLR
-
 # Gestor de Productos e Inventario (API & MySQL)
 
 Aplicación de escritorio desarrollada en Python para la gestión de inventario y productos. Permite visualizar productos, filtrar búsquedas y exportar informes en formatos PDF y Excel.
@@ -17,3 +15,5 @@ Abre el terminal (o consola de comandos) en la carpeta del proyecto y ejecuta el
 ```bash
 pip install requests mysql-connector-python fpdf openpyxl
 ```
+
+Creado por [byAlexLR](https://github.com/byAlexLR).
