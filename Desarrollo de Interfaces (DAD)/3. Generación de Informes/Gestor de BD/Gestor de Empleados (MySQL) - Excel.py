@@ -129,7 +129,7 @@ class AppEmpleadosExcel:
             # Si el campo está vacío, muestra todos
             self.actualizar_tabla(self.datos_memoria)
         else:
-            # Filtrar productos por nombre
+           # Filtra por nombre o puesto
             filtrados = [
                 p
                 for p in self.datos_memoria
@@ -214,3 +214,4 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = AppEmpleadosExcel(root)
     root.mainloop()
+
